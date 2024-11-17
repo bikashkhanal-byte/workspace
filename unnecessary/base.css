@@ -1,0 +1,30 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.first {
+  position: relative;
+}
+
+.first img {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: start;
+}
+
+.img {
+  display: flex;
+}
+
+.seond-img img {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: start;
+}
+
+.second-img {
+  display: flex;
+}

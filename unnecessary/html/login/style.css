@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   width: 400px;
+    height: 600px;
+    background-color: blueviolet;
+
+}
+
+.container{
+    position: absolute;
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+    padding: 10px 20px;
+  background: transparent;
+  backdrop-filter: blur(6px);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container h1{
+    font-size: 30px;
+    color: aqua;
+}
+
+.username{
+    position: relative;
+}
+
+form{
+    display: grid ;
+    gap: 2.5rem;
+}

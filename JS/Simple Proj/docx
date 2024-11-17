@@ -1,0 +1,43 @@
+
+
+// for (let i = 0; i <= 15; i++) {
+  //   console.log("Price After Discount for", products[i].name, 300)
+  // }
+
+
+function calc_tax(tax_per, price) {
+  return price + (tax_per / 100) * price;
+}
+function calc_discount(x) {
+  return x.price - (x.discount / 100) * x.price;
+}
+
+const discountedPrice_p1 = calc_discount(prod_1);
+
+const discountedPrice_p2 = calc_discount(prod_2);
+
+const tax_price_p1 = calc_tax(prod_1.tax, discountedPrice_p1);
+const tax_price_p2 = calc_tax(prod_2.tax, discountedPrice_p2);
+
+console.log("Price After Discount For Pen", discountedPrice_p1);
+console.log("Price After Discount For Copy", discountedPrice_p2);
+console.log("After Tax For Pen",tax_price_p1);
+console.log("After Tax For Copy",tax_price_p2);
+
+// Array
+// const numbers = [1,2,3,4,5,6]
+// const string = ["Ram", "Sham", "Hari"]
+// const objects = [{name: "Ram"},  {name: "Sham"}]
+// const arrays = [[1,2,3], ["Nepal", "Uk", "USA"]]
+
+
+/* Loops
+  - For 
+  - While
+*/
+
+
+
+// For Loop
+
+

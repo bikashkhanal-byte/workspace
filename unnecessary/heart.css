@@ -1,0 +1,53 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 43, 43);
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background-color: red;
+    margin: 50px;
+    animation: beat 1s infinite alternate;
+    align-self: center;
+    justify-self: center;
+    
+    
+    
+}
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -45px;
+    left: 0;
+  }
+  
+  .heart::after {
+    top: 0;
+    left: 45px;
+  }
+  
+  @keyframes beat {
+    0% {
+      transform: rotate(-45deg) scale(0.5);
+    }
+    100% {
+      transform: rotate(-45deg) scale(1);
+    }
+    
+  }

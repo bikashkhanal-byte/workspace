@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(asthetic.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  background-color: red;
+  margin: 50opx;
+  transform: rotate(140deg);
+  animation: beat 0.5s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  left: -45px;
+  top: 0;
+}
+
+.heart::after {
+  left: 0;
+  top: 45px;
+}
+@keyframes beat {
+  0% {
+    transform: rotate(140deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(140deg) scale(1);
+  }
+}
